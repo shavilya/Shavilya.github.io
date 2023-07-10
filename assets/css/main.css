@@ -1635,6 +1635,7 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			width: 100%;
+			padding-top: 116px;
 		}
 
 		.image.featured {
@@ -1996,6 +1997,7 @@ input, select, textarea {
 		.wrapper.style1 {
 			background-image: none;
 			background-color: #fff;
+			
 		}
 
 		.wrapper.style2 {
@@ -2412,7 +2414,7 @@ input, select, textarea {
 				#top .image {
 					width: 15em;
 					height: 15em;
-					margin-bottom: 0;
+	
 				}
 
 				#top p {
