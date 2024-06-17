@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel = 'stylesheet' href="/assets/css/resume.css">
+</head>
+<body>
+
+	<!-- Nav -->
+    <nav id="nav">
+        <ul class="container">
+                <li><a href="#Top">Top</a></li>
+                <li><a href="#Work">Projects</a></li>
+                <li><a href="#Portfolio">Kaggle Notebooks</a></li>
+                <li><a href="resume.html">My Resumes</a></li>
+                <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>My Resumes</h1>
+        <p>Click on the resume to download:</p>
+        <ul>
+            <li><a href="/assets/resumes/ShavilyaRajput_DataAnalyst.pdf" download="ShavilyaRajput_DataAnalyst.pdf">Data Analyst</a></li>
+            <li><a href="/assets/resumes/ShavilyaRajput_DataScientist.pdf" download="ShavilyaRajput_DataScientist.pdf">Data Scientist</a></li>
+           
+        </ul>
+    </main>
+
+    <script>
+        document.querySelectorAll('a[download]').forEach(link => {
+            link.addEventListener('click', function(event) {
+                console.log('Downloading ' + event.target.getAttribute('download'));
+            });
+        });
+    </script>
+    
+</body>
+</html>
